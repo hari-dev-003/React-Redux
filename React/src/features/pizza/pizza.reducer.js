@@ -1,4 +1,4 @@
-import { ORDER_PIZZA } from "./pizza.types";
+import { ORDER_PIZZA, PARCEL_PIZZA } from "./pizza.types";
 
 
 const initialState = {
@@ -11,6 +11,11 @@ const pizzaReducer =(state=initialState,action) => {
             return {
                 ...state,
                 pizzaBase: state.pizzaBase - 1
+            }
+        case PARCEL_PIZZA:
+            return {
+                ...state,
+                pizzaBase: state.pizzaBase + 0.5
             }
         default:
             return state;

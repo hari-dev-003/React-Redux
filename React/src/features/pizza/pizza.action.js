@@ -1,6 +1,4 @@
-import { ORDER_PIZZA } from "./pizza.types"
-
-
+import { ORDER_PIZZA, PARCEL_PIZZA } from "./pizza.types"
 
 const orderPizza =() => {
     return {
@@ -9,4 +7,11 @@ const orderPizza =() => {
     }
 }
 
-export {orderPizza}
+const parcelPizza = () => {
+    return {
+        type: PARCEL_PIZZA,
+        shop_name: "Pizza Hut",
+    }
+}
+
+export {orderPizza, parcelPizza}
