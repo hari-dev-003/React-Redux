@@ -1,7 +1,7 @@
 import React from 'react'
 import { orderPizza  } from '../features/pizza/pizza.selector'
 import { useSelector, useDispatch } from 'react-redux'
-const Pizzabox = (props) => {
+const Pizzabox = () => {
 
 const count = useSelector((state) => state.pizza.pizzaBase) 
 const dispatch = useDispatch()
