@@ -9,4 +9,4 @@ const orderPizza =() => {
     }
 }
 
-export { orderPizza }
+export {orderPizza}
